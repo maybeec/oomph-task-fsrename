@@ -10,7 +10,7 @@
     Eike Stepper - initial API and implementation
 -->
 <feature
-      id="task-fsrename"
+      id="task-fsrename-feature"
       label="%featureName"
       version="1.0.0.qualifier"
       provider-name="%providerName">
