@@ -19,6 +19,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import com.github.maybeec.oomph.task.fsrename.FSRenameTask;
 import com.github.maybeec.oomph.task.fsrename.fsrenamePackage;
+import com.github.maybeec.oomph.task.fsrename.core.FileSystemRenameUtil;
+import com.github.maybeec.oomph.task.fsrename.core.impl.FileSystemRenameUtilImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -173,7 +175,7 @@ public class FSRenameTaskImpl extends SetupTaskImpl implements FSRenameTask
   @Override
   public int getPriority()
   {
-    return PRIORITY;
+    return priority;
   }
 
   /**
@@ -309,8 +311,8 @@ public class FSRenameTaskImpl extends SetupTaskImpl implements FSRenameTask
 
   public void perform(SetupTaskContext context) throws Exception
   {
-    // TODO Implement FSRenameTaskImpl.perform()
-    context.log("Implement FSRenameTaskImpl.perform()");
+    FileSystemRenameUtil fileSystemRenameUtil = new FileSystemRenameUtilImpl();
+    fileSystemRenameUtil.rename(resource, destination);
   }
 
   @Override
