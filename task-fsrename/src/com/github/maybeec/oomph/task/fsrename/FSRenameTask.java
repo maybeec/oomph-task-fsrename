@@ -27,7 +27,7 @@ import org.eclipse.oomph.setup.SetupTask;
  * </ul>
  *
  * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask()
- * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.fs.rename' repository='http://download.example.org/task-fsrename/updates' installableUnits='task-fsrename.feature.group'"
+ * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.fs.rename' repository='https://themetalone.github.io/oomph-task-fsrename/updates' installableUnits='com.github.maybeec.oomph.task.fsrename.feature.feature.group'"
  *        annotation="http://www.eclipse.org/oomph/setup/ValidTriggers triggers='BOOTSTRAP MANUAL'"
  * @generated
  */
@@ -35,82 +35,82 @@ public interface FSRenameTask extends SetupTask
 {
 
   /**
-   * Returns the value of the '<em><b>Resource</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Resource</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Resource</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Resource</em>' attribute.
-   * @see #setResource(String)
-   * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask_Resource()
-   * @model required="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Resource</em>' attribute.
+	 * @see #setResource(String)
+	 * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask_Resource()
+	 * @model required="true"
+	 * @generated
+	 */
   String getResource();
 
   /**
-   * Sets the value of the '{@link com.github.maybeec.oomph.task.fsrename.FSRenameTask#getResource <em>Resource</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.github.maybeec.oomph.task.fsrename.FSRenameTask#getResource <em>Resource</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Resource</em>' attribute.
-   * @see #getResource()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Resource</em>' attribute.
+	 * @see #getResource()
+	 * @generated
+	 */
   void setResource(String value);
 
   /**
-   * Returns the value of the '<em><b>Destination</b></em>' attribute.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Destination</b></em>' attribute.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Destination</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Destination</em>' attribute.
-   * @see #setDestination(String)
-   * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask_Destination()
-   * @model required="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Destination</em>' attribute.
+	 * @see #setDestination(String)
+	 * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask_Destination()
+	 * @model required="true"
+	 * @generated
+	 */
   String getDestination();
 
   /**
-   * Sets the value of the '{@link com.github.maybeec.oomph.task.fsrename.FSRenameTask#getDestination <em>Destination</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.github.maybeec.oomph.task.fsrename.FSRenameTask#getDestination <em>Destination</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Destination</em>' attribute.
-   * @see #getDestination()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Destination</em>' attribute.
+	 * @see #getDestination()
+	 * @generated
+	 */
   void setDestination(String value);
 
   /**
-   * Returns the value of the '<em><b>Priority</b></em>' attribute.
-   * The default value is <code>"500"</code>.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Priority</b></em>' attribute.
+	 * The default value is <code>"500"</code>.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Priority</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Priority</em>' attribute.
-   * @see #setPriority(int)
-   * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask_Priority()
-   * @model default="500"
-   * @generated
-   */
+	 * @return the value of the '<em>Priority</em>' attribute.
+	 * @see #setPriority(int)
+	 * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask_Priority()
+	 * @model default="500"
+	 * @generated
+	 */
   int getPriority();
 
   /**
-   * Sets the value of the '{@link com.github.maybeec.oomph.task.fsrename.FSRenameTask#getPriority <em>Priority</em>}' attribute.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link com.github.maybeec.oomph.task.fsrename.FSRenameTask#getPriority <em>Priority</em>}' attribute.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Priority</em>' attribute.
-   * @see #getPriority()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Priority</em>' attribute.
+	 * @see #getPriority()
+	 * @generated
+	 */
   void setPriority(int value);
 
 } // FSRenameTask

@@ -21,87 +21,82 @@ import com.github.maybeec.oomph.task.fsrename.fsrenamePackage;
 public class fsrenameFactoryImpl extends EFactoryImpl implements fsrenameFactory
 {
   /**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public static fsrenameFactory init()
   {
-    try
-    {
-      fsrenameFactory thefsrenameFactory = (fsrenameFactory)EPackage.Registry.INSTANCE.getEFactory(fsrenamePackage.eNS_URI);
-      if (thefsrenameFactory != null)
-      {
-        return thefsrenameFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new fsrenameFactoryImpl();
-  }
+		try {
+			fsrenameFactory thefsrenameFactory = (fsrenameFactory)EPackage.Registry.INSTANCE.getEFactory(fsrenamePackage.eNS_URI);
+			if (thefsrenameFactory != null) {
+				return thefsrenameFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new fsrenameFactoryImpl();
+	}
 
   /**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public fsrenameFactoryImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public EObject create(EClass eClass)
   {
-    switch (eClass.getClassifierID())
-    {
-    case fsrenamePackage.FS_RENAME_TASK:
-      return createFSRenameTask();
-    default:
-      throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case fsrenamePackage.FS_RENAME_TASK: return createFSRenameTask();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public FSRenameTask createFSRenameTask()
   {
-    FSRenameTaskImpl fsRenameTask = new FSRenameTaskImpl();
-    return fsRenameTask;
-  }
+		FSRenameTaskImpl fsRenameTask = new FSRenameTaskImpl();
+		return fsRenameTask;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public fsrenamePackage getfsrenamePackage()
   {
-    return (fsrenamePackage)getEPackage();
-  }
+		return (fsrenamePackage)getEPackage();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
   @Deprecated
   public static fsrenamePackage getPackage()
   {
-    return fsrenamePackage.eINSTANCE;
-  }
+		return fsrenamePackage.eINSTANCE;
+	}
 
 } // fsrenameFactoryImpl

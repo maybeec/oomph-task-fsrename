@@ -3,7 +3,7 @@
     modelDirectory="/task-fsrename/src"
     creationIcons="false"
     editorDirectory=""
-    modelPluginID="task-fsrename"
+    modelPluginID="com.github.maybeec.oomph.task.fsrename"
     modelName="FSRename"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore"

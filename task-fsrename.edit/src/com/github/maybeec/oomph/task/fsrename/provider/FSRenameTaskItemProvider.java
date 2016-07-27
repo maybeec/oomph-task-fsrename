@@ -34,112 +34,140 @@ import java.util.List;
 public class FSRenameTaskItemProvider extends SetupTaskItemProvider
 {
   /**
-   * This constructs an instance from a factory and a notifier.
-   * <!-- begin-user-doc -->
+	 * This constructs an instance from a factory and a notifier.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public FSRenameTaskItemProvider(AdapterFactory adapterFactory)
   {
-    super(adapterFactory);
-  }
+		super(adapterFactory);
+	}
 
   /**
-   * This returns the property descriptors for the adapted class.
-   * <!-- begin-user-doc -->
+	 * This returns the property descriptors for the adapted class.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public List<IItemPropertyDescriptor> getPropertyDescriptors(Object object)
   {
-    if (itemPropertyDescriptors == null)
-    {
-      super.getPropertyDescriptors(object);
+		if (itemPropertyDescriptors == null) {
+			super.getPropertyDescriptors(object);
 
-      addResourcePropertyDescriptor(object);
-      addDestinationPropertyDescriptor(object);
-      addPriorityPropertyDescriptor(object);
-    }
-    return itemPropertyDescriptors;
-  }
+			addResourcePropertyDescriptor(object);
+			addDestinationPropertyDescriptor(object);
+			addPriorityPropertyDescriptor(object);
+		}
+		return itemPropertyDescriptors;
+	}
 
   /**
-   * This adds a property descriptor for the Resource feature.
-   * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Resource feature.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected void addResourcePropertyDescriptor(Object object)
   {
-    itemPropertyDescriptors.add(createItemPropertyDescriptor(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-        getString("_UI_FSRenameTask_resource_feature"),
-        getString("_UI_PropertyDescriptor_description", "_UI_FSRenameTask_resource_feature", "_UI_FSRenameTask_type"),
-        fsrenamePackage.Literals.FS_RENAME_TASK__RESOURCE, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-  }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_FSRenameTask_resource_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FSRenameTask_resource_feature", "_UI_FSRenameTask_type"),
+				 fsrenamePackage.Literals.FS_RENAME_TASK__RESOURCE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
 
   /**
-   * This adds a property descriptor for the Destination feature.
-   * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Destination feature.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected void addDestinationPropertyDescriptor(Object object)
   {
-    itemPropertyDescriptors.add(createItemPropertyDescriptor(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-        getString("_UI_FSRenameTask_destination_feature"),
-        getString("_UI_PropertyDescriptor_description", "_UI_FSRenameTask_destination_feature", "_UI_FSRenameTask_type"),
-        fsrenamePackage.Literals.FS_RENAME_TASK__DESTINATION, true, false, false, ItemPropertyDescriptor.GENERIC_VALUE_IMAGE, null, null));
-  }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_FSRenameTask_destination_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FSRenameTask_destination_feature", "_UI_FSRenameTask_type"),
+				 fsrenamePackage.Literals.FS_RENAME_TASK__DESTINATION,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
 
   /**
-   * This adds a property descriptor for the Priority feature.
-   * <!-- begin-user-doc -->
+	 * This adds a property descriptor for the Priority feature.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected void addPriorityPropertyDescriptor(Object object)
   {
-    itemPropertyDescriptors.add(createItemPropertyDescriptor(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(), getResourceLocator(),
-        getString("_UI_FSRenameTask_priority_feature"),
-        getString("_UI_PropertyDescriptor_description", "_UI_FSRenameTask_priority_feature", "_UI_FSRenameTask_type"),
-        fsrenamePackage.Literals.FS_RENAME_TASK__PRIORITY, true, false, false, ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE, null, null));
-  }
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_FSRenameTask_priority_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_FSRenameTask_priority_feature", "_UI_FSRenameTask_type"),
+				 fsrenamePackage.Literals.FS_RENAME_TASK__PRIORITY,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
 
   /**
-   * This returns FSRenameTask.gif.
-   * <!-- begin-user-doc -->
+	 * This returns FSRenameTask.gif.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object getImage(Object object)
   {
-    return overlayImage(object, getResourceLocator().getImage("full/obj16/FSRenameTask"));
-  }
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/FSRenameTask"));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected boolean shouldComposeCreationImage()
   {
-    return true;
-  }
+		return true;
+	}
 
   /**
-   * This returns the label text for the adapted class.
-   * <!-- begin-user-doc -->
+	 * This returns the label text for the adapted class.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public String getTextGen(Object object)
   {
-    String label = ((FSRenameTask)object).getID();
-    return label == null || label.length() == 0 ? getString("_UI_FSRenameTask_type") : getString("_UI_FSRenameTask_type") + " " + label;
-  }
+		String label = ((FSRenameTask)object).getID();
+		return label == null || label.length() == 0 ?
+			getString("_UI_FSRenameTask_type") :
+			getString("_UI_FSRenameTask_type") + " " + label;
+	}
 
   @Override
   public String getText(Object object)
@@ -151,39 +179,38 @@ public class FSRenameTaskItemProvider extends SetupTaskItemProvider
   }
 
   /**
-   * This handles model notifications by calling {@link #updateChildren} to update any cached
-   * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
-   * <!-- begin-user-doc -->
+	 * This handles model notifications by calling {@link #updateChildren} to update any cached
+	 * children and by creating a viewer notification, which it passes to {@link #fireNotifyChanged}.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void notifyChanged(Notification notification)
   {
-    updateChildren(notification);
+		updateChildren(notification);
 
-    switch (notification.getFeatureID(FSRenameTask.class))
-    {
-    case fsrenamePackage.FS_RENAME_TASK__RESOURCE:
-    case fsrenamePackage.FS_RENAME_TASK__DESTINATION:
-    case fsrenamePackage.FS_RENAME_TASK__PRIORITY:
-      fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
-      return;
-    }
-    super.notifyChanged(notification);
-  }
+		switch (notification.getFeatureID(FSRenameTask.class)) {
+			case fsrenamePackage.FS_RENAME_TASK__RESOURCE:
+			case fsrenamePackage.FS_RENAME_TASK__DESTINATION:
+			case fsrenamePackage.FS_RENAME_TASK__PRIORITY:
+				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
+				return;
+		}
+		super.notifyChanged(notification);
+	}
 
   /**
-   * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
-   * that can be created under this object.
-   * <!-- begin-user-doc -->
+	 * This adds {@link org.eclipse.emf.edit.command.CommandParameter}s describing the children
+	 * that can be created under this object.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object)
   {
-    super.collectNewChildDescriptors(newChildDescriptors, object);
-  }
+		super.collectNewChildDescriptors(newChildDescriptors, object);
+	}
 
 }

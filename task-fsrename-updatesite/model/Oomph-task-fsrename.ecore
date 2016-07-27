@@ -3,13 +3,13 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="fsrename" nsURI="http://maybeec.github.io/task-fsrename/1.0"
     nsPrefix="fsrename">
   <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-    <details key="schemaLocation" value="http://www.example.org/task-fsrename/schemas/Oomph-task-fsrename.ecore"/>
+    <details key="schemaLocation" value="https://raw.githubusercontent.com/themetalone/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="FSRenameTask" eSuperTypes="http://www.eclipse.org/oomph/setup/1.0#//SetupTask">
     <eAnnotations source="http://www.eclipse.org/oomph/setup/Enablement">
       <details key="variableName" value="p2.fs.rename"/>
-      <details key="repository" value="http://download.example.org/task-fsrename/updates"/>
-      <details key="installableUnits" value="task-fsrename.feature.group"/>
+      <details key="repository" value="https://themetalone.github.io/oomph-task-fsrename/updates"/>
+      <details key="installableUnits" value="com.github.maybeec.oomph.task.fsrename.feature.feature.group"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/oomph/setup/ValidTriggers">
       <details key="triggers" value="BOOTSTRAP MANUAL"/>

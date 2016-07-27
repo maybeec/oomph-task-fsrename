@@ -10,7 +10,7 @@
     Eike Stepper - initial API and implementation
 -->
 <feature
-      id="task-fsrename-feature"
+      id="com.github.maybeec.oomph.task.fsrename.feature"
       label="%featureName"
       version="1.0.0.qualifier"
       provider-name="%providerName">
@@ -99,19 +99,19 @@ This Agreement is governed by the laws of the State of New York and the intellec
    </license>
 
    <url>
-      <update label="%updateSiteName" url="http://download.example.org/task-fsrename/updates"/>
-      <discovery label="%updateSiteName" url="http://download.example.org/task-fsrename/updates"/>
+      <update label="%updateSiteName" url="https://themetalone.github.io/oomph-task-fsrename/updates"/>
+      <discovery label="%updateSiteName" url="https://themetalone.github.io/oomph-task-fsrename/updates"/>
    </url>
 
    <plugin
-         id="task-fsrename"
+         id="com.github.maybeec.oomph.task.fsrename"
          download-size="0"
          install-size="0"
          version="0.0.0"
          unpack="false"/>
 
    <plugin
-         id="task-fsrename.edit"
+         id="com.github.maybeec.oomph.task.fsrename.edit"
          download-size="0"
          install-size="0"
          version="0.0.0"
