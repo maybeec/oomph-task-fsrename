@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Product
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:fsrename="http://maybeec.github.io/task-fsrename/1.0"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xsi:schemaLocation="http://maybeec.github.io/task-fsrename/1.0 https://raw.githubusercontent.com/themetalone/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore"
+    name="fsrenametest"
+    label="FSRenameTest">
+  <annotation
+      source="http://www.eclipse.org/oomph/setup/BrandingInfo">
+    <detail
+        key="folderName">
+      <value>eclipse</value>
+    </detail>
+    <detail
+        key="folderName.macosx">
+      <value>Eclipse</value>
+    </detail>
+  </annotation>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      name="${installation.location}"/>
+  <setupTask
+      xsi:type="fsrename:FSRenameTask"
+      resource="${installation.location/test}"
+      destination="passed"
+      priority="100"/>
+  <version name="mars"
+      label="Mars"
+      requiredJavaVersion="1.7">
+    <description>FSRenameTest for Mars.</description>
+  </version>
+  <description>expects the folder 'test' at ${installation.location}</description>
+</setup:Product>
