@@ -29,7 +29,7 @@ public class FileSystemRenameUtilImpl implements FileSystemRenameUtil
     SetupTaskLogger LOG = SetupTaskLogger.getLogger();
     LOG.logInfo("Renaming " + source + " to " + destination);
     Path sourcePath = Paths.get(source);
-    Path destinationPath = Paths.get(sourcePath.getParent().toString() + File.pathSeparator + destination);
+    Path destinationPath = Paths.get(sourcePath.getParent().toString() + File.separator + destination);
     try
     {
       Files.move(sourcePath, destinationPath);
