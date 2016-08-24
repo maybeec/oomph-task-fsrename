@@ -37,11 +37,7 @@ public class FileSystemRenameUtilImpl implements FileSystemRenameUtil {
 		try {
 			Files.move(sourcePath, destinationPath);
 		} catch (IOException ex) {
-			for(StackTraceElement el :  ex.getStackTrace()){
-				LOG.logError(el.toString());
-			}
-			
-			throw new FSRenameException(ex.getMessage());
+			throw new FSRenameException(ex.getMessage(),ex);
 		}
 
 	}
