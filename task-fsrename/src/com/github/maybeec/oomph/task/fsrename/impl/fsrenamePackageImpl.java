@@ -211,7 +211,7 @@ public class fsrenamePackageImpl extends EPackageImpl implements fsrenamePackage
 		initEAttribute(getFSRenameTask_Priority(), ecorePackage.getEInt(), "priority", "500", 0, 1, FSRenameTask.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
-		createResource("https://raw.githubusercontent.com/themetalone/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore");
+		createResource("https://raw.githubusercontent.com/maybeec/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore");
 
 		// Create annotations
 		// http://www.eclipse.org/emf/2002/Ecore
@@ -235,7 +235,7 @@ public class fsrenamePackageImpl extends EPackageImpl implements fsrenamePackage
 		  (this, 
 		   source, 
 		   new String[] {
-			 "schemaLocation", "https://raw.githubusercontent.com/themetalone/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore"
+			 "schemaLocation", "https://raw.githubusercontent.com/maybeec/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore"
 		   });
 	}
 
@@ -253,7 +253,7 @@ public class fsrenamePackageImpl extends EPackageImpl implements fsrenamePackage
 		   source, 
 		   new String[] {
 			 "variableName", "p2.fs.rename",
-			 "repository", "https://themetalone.github.io/oomph-task-fsrename/updates",
+			 "repository", "https://maybeec.github.io/oomph-task-fsrename/updates",
 			 "installableUnits", "com.github.maybeec.oomph.task.fsrename.feature.feature.group"
 		   });
 	}

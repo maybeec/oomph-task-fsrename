@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EPackage;
  * <!-- end-user-doc -->
  * @see com.github.maybeec.oomph.task.fsrename.fsrenameFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='https://raw.githubusercontent.com/themetalone/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='https://raw.githubusercontent.com/maybeec/oomph-task-fsrename/master/task-fsrename-updatesite/model/Oomph-task-fsrename.ecore'"
  * @generated
  */
 public interface fsrenamePackage extends EPackage

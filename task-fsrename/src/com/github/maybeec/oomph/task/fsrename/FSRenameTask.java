@@ -27,7 +27,7 @@ import org.eclipse.oomph.setup.SetupTask;
  * </ul>
  *
  * @see com.github.maybeec.oomph.task.fsrename.fsrenamePackage#getFSRenameTask()
- * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.fs.rename' repository='https://themetalone.github.io/oomph-task-fsrename/updates' installableUnits='com.github.maybeec.oomph.task.fsrename.feature.feature.group'"
+ * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.fs.rename' repository='https://maybeec.github.io/oomph-task-fsrename/updates' installableUnits='com.github.maybeec.oomph.task.fsrename.feature.feature.group'"
  *        annotation="http://www.eclipse.org/oomph/setup/ValidTriggers triggers='BOOTSTRAP MANUAL'"
  * @generated
  */
